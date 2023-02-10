@@ -35,7 +35,7 @@ const InputOutput = ({ setTogglePage, selectedAi }) => {
       <h1 className='text-center font-bold italic text-2xl text-white'>{title}</h1>
       <button onClick={() => setTogglePage(true)} className="rounded-full text-white font-bold hover:text-cyan-400 transition-all p-2 text-2xl"> <FaBackward></FaBackward> </button>
       <div className='grid place-items-center p-5'>
-        <textarea placeholder={`${model.placeholder}`} cols="50" rows="5" className='p-3 outline-none rounded-md shadow-md focus:border-2 border-gray-800 focus:outline-3 focus:outline-cyan-500' onBlur={(e) => setUserInput(e.target.value)}></textarea>
+        <textarea placeholder={`${model.placeholder}`} cols="50" rows="5" className='p-3 outline-none rounded-md shadow-md focus:border-2 border-gray-800 focus:outline-3 focus:outline-cyan-500 leading-tight sm:w-full w-full md:w-auto' onBlur={(e) => setUserInput(e.target.value)}></textarea>
         <button onClick={() => handleUserPromptSubmit()} className='mt-3 bg-cyan-600 px-12 rounded-full text-white font-bold py-1 hover:bg-cyan-400 transition-all'>Send</button>
       </div>
       <div className='text-center'>
