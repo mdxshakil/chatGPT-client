@@ -6,7 +6,7 @@ const Home = ({ setTogglePage, setSelectedAi }) => {
     return (
         <div className='text-center'>
             <h1 className='text-4xl text-slate-200 p-3 font-bold inline-block italic'>Your virtual AI companion</h1>
-            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-12 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-12 gap-4'>
                 {
                     aiChatOptions.map(option =>
                         <AiOptionCard
